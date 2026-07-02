@@ -1,0 +1,1 @@
+# Gold-Fundamentals-payment-
