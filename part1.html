@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="part1.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-primary"></h1>
+    </div>
+    
+    <div>
+        
+        <!--login/signup-->
+        
+ <div id="auth">
+     <h2>Demo Bank</h2>
+     
+     
+     <ul>
+         <li>
+             <button onclick="showLogin()">Login</button>
+         </li>
+         
+         <li>
+             <button onclick="showSignup()">Sign up</button>
+         </li>
+         
+     </ul>
+     
+
+     
+     
+     <!--Signup-->
+     
+    <div id="signupForm" style="display:none">
+        
+       <div>
+         <input id="signupUser"  placeholder="Username">
+          </div> 
+        
+       <div>
+           <input id="signupPass" type="password" placeholder="Password">
+            </div>
+            
+<button onclick="signup()">Create Account</button>          
+       
+        </div>
+        
+        <!--login form-->
+   <div id="loginForm">
+       <div>
+          <input id="loginUser" placeholder="username">
+         
+       </div>
+       
+       <div>
+           <input id="loginPass" placeholder="Password">
+           
+       </div>
+      <button onclick="login()">Login</button>
+       
+       
+       
+   </div>     
+        
+     </div>
+        
+    <!--Fake payment dashboard-->
+    
+    <div id="dashboard" style="display:none;">
+        <h2>Welcome</h2>
+        
+        <p id="welcome"></p>
+        
+        <h5>Your Balance</h5>
+        
+        <div class="Balance" id="balance">$2500</div>
+        
+        <hr>
+        
+        <h4>Fake payment</h4>
+        
+        <input id="recipient" placeholder="Recipient">
+        <input id="amount" type="number" placeholder="Amount">
+        
+        <button onclick="pay()">Send payment</button>
+        
+        <div id="message"></div>
+            <hr>
+            
+     <button onclick="logout()">Logout</button> 
+     
+     
+            
+
+        
+    </div>
+    
+    </div>
+    
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<script src="part1.js"></script>
+</html>
